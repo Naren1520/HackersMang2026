@@ -1,15 +1,27 @@
-<div class="fixed inset-0 bg-black/50 flex items-center justify-center p-4 z-50">
-    <div class="bg-white rounded-xl p-6 max-w-xs w-full text-center shadow-xl animate-[bounce_0.5s_ease-out]">
-        <div class="text-5xl mb-4">🎉</div>
-        <h2 class="text-3xl font-bold text-amber-500 mb-2">BINGO!</h2>
-        <p class="text-gray-600 mb-6">You completed a line!</p>
+﻿<div class="fixed inset-0 bg-black/60 flex items-center justify-center p-4 z-50 backdrop-blur-sm">
+    <div class="bg-glass-dark rounded-xl p-8 max-w-xs w-full text-center shadow-premium border border-gold/30 animate-scaleIn">
+        <!-- Trophy Animation -->
+        <div class="text-6xl mb-6 animate-fadeIn">🏆</div>
+        
+        <!-- Victory Text -->
+        <h2 class="text-4xl font-light text-gold mb-2 tracking-wide">BINGO!</h2>
+        <div class="h-0.5 w-12 bg-gradient-to-r from-gold to-transparent mx-auto mb-4"></div>
+        <p class="text-gray-600 mb-8 font-light">You completed a premium line!</p>
 
+        <!-- Celebration Effect -->
+        <div class="mb-6 flex justify-center gap-2 text-2xl">
+            <span class="animate-slideInDown stagger-1">✨</span>
+            <span class="animate-slideInDown stagger-2">⭐</span>
+            <span class="animate-slideInDown stagger-3">✨</span>
+        </div>
+
+        <!-- Premium Button -->
         <button
             hx-post="/dismiss-modal"
             hx-target="#game-container"
             hx-swap="outerHTML"
-            class="w-full bg-accent text-white font-semibold py-3 px-6 rounded-lg active:bg-accent-light transition-colors">
-            Keep Playing
+            class="w-full bg-gold text-dark-navy font-bold py-3 px-6 rounded-lg hover-lift shadow-premium border border-gold transition-all duration-300 active:scale-95">
+            Continue Playing
         </button>
     </div>
 </div>

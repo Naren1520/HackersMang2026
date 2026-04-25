@@ -1,6 +1,6 @@
-# ?? VS Code GitHub Copilot Agent Lab
+﻿# 🎮 VS Code GitHub Copilot Agent Lab
 
-[?? Lab Guide](https://copilot-dev-days.github.io/agent-lab-python/docs/) � [? README](../README.md)
+[📚 Lab Guide](https://copilot-dev-days.github.io/agent-lab-python/docs/) • [← README](../README.md)
 
 ---
 
@@ -8,21 +8,20 @@
 
 ---
 
-## ? Required Before Development
+## ✅ Required Before Development
 
 Run these checks before starting any work:
 
-```bash
+\\\ash
 uv run ruff check .           # Lint
 uv run pytest                 # Test
 uv run uvicorn app.main:app   # Build & Run
-```
-
+\\\`n
 All must pass. Fix any issues before proceeding.
 
 ---
 
-## ?? Prerequisites
+## 📋 Prerequisites
 
 - [ ] VS Code v1.107+ with **GitHub Copilot** signed in
 - [ ] Python 3.13 & uv installed
@@ -30,16 +29,16 @@ All must pass. Fix any issues before proceeding.
 
 ---
 
-## ?? What You'll Learn
+## 🎯 What You'll Learn
 
-- **Context Engineering** � Teach AI about your codebase
-- **Design-First Development** � Iterate UI with AI guidance
-- **Test-Driven Development** � Build reliable features
-- **Multi-Agent Workflows** � Coordinate specialized agents
+- **Context Engineering** — Teach AI about your codebase
+- **Design-First Development** — Iterate UI with AI guidance
+- **Test-Driven Development** — Build reliable features
+- **Multi-Agent Workflows** — Coordinate specialized agents
 
 ---
 
-## ?? Lab Parts
+## 📚 Lab Parts
 
 | Part | Topic | Time |
 |------|-------|------|
@@ -50,7 +49,7 @@ All must pass. Fix any issues before proceeding.
 
 ---
 
-## ?? Quick Tips
+## 💡 Quick Tips
 
 1. Keep browser open to watch live updates
 2. Commit frequently to save working states

@@ -1,23 +1,38 @@
-<div id="game-container">
-<div class="flex flex-col items-center justify-center min-h-full p-6 bg-gray-50">
-    <div class="text-center max-w-sm">
-        <h1 class="text-4xl font-bold text-gray-900 mb-2">Soc Ops</h1>
-        <p class="text-lg text-gray-600 mb-8">Social Bingo</p>
-
-        <div class="bg-white rounded-lg p-6 shadow-sm border border-gray-200 mb-8">
-            <h2 class="font-semibold text-gray-800 mb-3">How to play</h2>
-            <ul class="text-left text-gray-600 text-sm space-y-2">
-                <li>• Find people who match the questions</li>
-                <li>• Tap a square when you find a match</li>
-                <li>• Get 5 in a row to win!</li>
-            </ul>
+﻿<div id="game-container">
+<div class="flex flex-col items-center justify-center min-h-full p-6">
+    <div class="text-center max-w-sm animate-fadeIn">
+        <!-- Luxury Header -->
+        <div class="mb-12">
+            <h1 class="text-5xl font-light mb-2 text-gold animate-slideInDown">Soc Ops</h1>
+            <div class="h-1 w-16 bg-gradient-to-r from-gold to-transparent mx-auto mb-4 rounded-full"></div>
+            <p class="text-lg text-gray-600 font-light tracking-widest uppercase">Social Bingo</p>
         </div>
 
+        <!-- Premium Info Card -->
+        <div class="bg-glass rounded-xl p-8 shadow-premium mb-8 border border-gold/30 hover-gold transition-all duration-300 animate-fadeIn stagger-1">
+            <h2 class="font-semibold text-gold mb-4 text-lg">How to Play</h2>
+            <div class="space-y-3">
+                <p class="text-left text-gray-700 text-sm flex items-start">
+                    <span class="text-gold mr-3 font-bold">01</span>
+                    <span>Find people who match the questions</span>
+                </p>
+                <p class="text-left text-gray-700 text-sm flex items-start">
+                    <span class="text-gold mr-3 font-bold">02</span>
+                    <span>Tap a square when you find a match</span>
+                </p>
+                <p class="text-left text-gray-700 text-sm flex items-start">
+                    <span class="text-gold mr-3 font-bold">03</span>
+                    <span>Get 5 in a row to win!</span>
+                </p>
+            </div>
+        </div>
+
+        <!-- Premium Button -->
         <button
             hx-post="/start"
             hx-target="#game-container"
             hx-swap="outerHTML"
-            class="w-full bg-accent text-white font-semibold py-4 px-8 rounded-lg text-lg active:bg-accent-light transition-colors">
+            class="w-full bg-gold text-dark-navy font-bold py-4 px-8 rounded-lg text-lg hover-lift shadow-premium border border-gold transition-all duration-300 animate-fadeIn stagger-2 hover:shadow-premium active:scale-95">
             Start Game
         </button>
     </div>
